@@ -6,7 +6,7 @@ export const askBlock = (targetWord: string): (Block | KnownBlock)[] => {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "この用語を聞かれたけどわからなかった〜。誰か用語の説明を追加して〜。",
+        text: "이 용어를 들었지만 몰랐다 ~. 누군가 용어 설명을 추가 ~.",
       },
     },
     {
@@ -24,7 +24,7 @@ export const askBlock = (targetWord: string): (Block | KnownBlock)[] => {
           type: "button",
           text: {
             type: "plain_text",
-            text: "用語を追加する",
+            text: "용어추가",
             emoji: true,
           },
           action_id: "show_add_item_modal",
@@ -39,14 +39,14 @@ export const askBlock = (targetWord: string): (Block | KnownBlock)[] => {
 
 export const askCompleteBlock = (
   targetWord: string,
-  channelName = "質問チャネル"
+  channelName = "질문채널"
 ): (Block | KnownBlock)[] => {
   return [
     {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: `おっけ〜。「${targetWord}」について #${channelName} で質問したよー`,
+        text: `오케이 「${targetWord}」정보 #${channelName} 질문했습니다.`,
       },
     },
   ];

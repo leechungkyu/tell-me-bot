@@ -10,7 +10,7 @@ const addAndAskElements = (searchWord: string, askChannelName: string) => {
       type: "button",
       text: {
         type: "plain_text",
-        text: "用語を追加する",
+        text: "용어 추가",
         emoji: true,
       },
       value: searchWord,
@@ -22,7 +22,7 @@ const addAndAskElements = (searchWord: string, askChannelName: string) => {
       type: "button",
       text: {
         type: "plain_text",
-        text: `#${askChannelName}で質問する`,
+        text: `#${askChannelName}으로 질문하기`,
         emoji: true,
       },
       value: searchWord,
@@ -52,7 +52,7 @@ export const searchResultBlock = ({
         type: "section",
         text: {
           type: "mrkdwn",
-          text: "おっけ〜。これだよ！",
+          text: "오케~. 이거야!",
         },
       },
       {
@@ -75,7 +75,7 @@ export const searchResultBlock = ({
         elements: [
           {
             type: "mrkdwn",
-            text: `結果を編集する場合は<https://docs.google.com/spreadsheets/d/${config.sheet.id}|こちら>`,
+            text: `결과를 편집하려면<https://docs.google.com/spreadsheets/d/${config.sheet.id}|여기>`,
           },
         ],
       },
@@ -92,7 +92,7 @@ export const searchResultBlock = ({
         type: "section",
         text: {
           type: "mrkdwn",
-          text: "関係ありそうな用語が見つかったヨ！",
+          text: "관련있을 것 같은 용어가 발견되었습니다!",
         },
       },
       {
@@ -117,7 +117,7 @@ export const searchResultBlock = ({
         type: "section",
         text: {
           type: "mrkdwn",
-          text: "もし新しい用語の場合は、こちらで対応してね。",
+          text: "만약 새로운 용어의 경우는, 여기에서 대응해 주세요.",
         },
       },
       {
@@ -129,7 +129,7 @@ export const searchResultBlock = ({
         elements: [
           {
             type: "mrkdwn",
-            text: `スプレッドシートを直接開く場合は<https://docs.google.com/spreadsheets/d/${config.sheet.id}|こちら>`,
+            text: `스프레드시트를 직접 열면<https://docs.google.com/spreadsheets/d/${config.sheet.id}|여기>`,
           },
         ],
       },
@@ -145,14 +145,14 @@ export const searchResultBlock = ({
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "ごめ〜ん... 見つからなかった...",
+        text: "죄송합니다 ... 찾지 못했습니다 ...",
       },
     },
     {
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "新しい用語だと思うから追加してね",
+        text: "새로운 용어라고 생각하기 때문에 추가하십시오.",
       },
     },
     {
@@ -164,7 +164,7 @@ export const searchResultBlock = ({
       elements: [
         {
           type: "mrkdwn",
-          text: `スプレッドシートを直接開く場合は<https://docs.google.com/spreadsheets/d/${config.sheet.id}|こちら>`,
+          text: `스프레드시트를 직접 열려면 <https://docs.google.com/spreadsheets/d/${config.sheet.id}|여기>`,
         },
       ],
     },

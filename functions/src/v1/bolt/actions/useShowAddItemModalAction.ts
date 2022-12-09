@@ -19,7 +19,7 @@ export const useShowAddItemModalAction = (app: App) => {
             callback_id: "add_item_view",
             title: {
               type: "plain_text",
-              text: "辞書に追加",
+              text: "사전에 추가",
             },
             blocks: addItemModalBlock(action.value),
             private_metadata: JSON.stringify({
@@ -27,7 +27,7 @@ export const useShowAddItemModalAction = (app: App) => {
             }),
             submit: {
               type: "plain_text",
-              text: "送信",
+              text: "전송",
             },
           },
         });

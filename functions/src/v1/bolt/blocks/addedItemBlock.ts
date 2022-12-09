@@ -12,7 +12,7 @@ export const addedItemBlock = (
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "新しい用語を登録したよ！",
+        text: "새로운 용어를 등록했습니다!",
       },
     },
     {
@@ -35,7 +35,7 @@ export const addedItemBlock = (
       elements: [
         {
           type: "mrkdwn",
-          text: `結果を編集する場合は<https://docs.google.com/spreadsheets/d/${config.sheet.id}|こちら>`,
+          text: `결과를 편집하려면<https://docs.google.com/spreadsheets/d/${config.sheet.id}|こちら>`,
         },
       ],
     },

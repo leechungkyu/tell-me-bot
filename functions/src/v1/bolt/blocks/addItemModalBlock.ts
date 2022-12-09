@@ -8,7 +8,7 @@ export const addItemModalBlock = (
       type: "section",
       text: {
         type: "mrkdwn",
-        text: "気軽に追加してね。間違っていたら誰かが修正してくれるはず。",
+        text: "부담없이 추가하십시오. 잘못되면 누군가가 수정해 줄 것.",
       },
     },
     {
@@ -16,7 +16,7 @@ export const addItemModalBlock = (
       block_id: "word",
       label: {
         type: "plain_text",
-        text: "用語",
+        text: "용어",
       },
       element: {
         type: "plain_text_input",
@@ -29,7 +29,7 @@ export const addItemModalBlock = (
       block_id: "description",
       label: {
         type: "plain_text",
-        text: "説明",
+        text: "설명",
       },
       element: {
         type: "plain_text_input",
